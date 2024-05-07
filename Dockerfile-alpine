@@ -9,10 +9,10 @@ RUN wget https://releases.hashicorp.com/terraform/1.8.2/terraform_1.8.2_linux_am
     mv terraform /usr/local/bin/ && \
     rm terraform_1.8.2_linux_amd64.zip
 
-# Configurando diretório de trabalhoss
+# Configurando diretório de trabalho
 WORKDIR /work
 
-# STAGE 2: Finals
+# STAGE 2: Final
 FROM alpine:latest
 
 WORKDIR /work
@@ -37,7 +37,7 @@ RUN mkdir aws
 RUN touch aws/credentials
 RUN echo "[default]" >> aws/credentials && \
     echo "aws_access_key_id = $AWS_ACCESS_KEY_ID" >> aws/credentials && \
-    echo "aws_secret_access_key = $AWS_SECRET_ACCESS_KEY" >> aws/credentials && \ 
+    echo "aws_secret_access_key = $AWS_SECRET_ACCESS_KEY" >> aws/credentials && \
     echo "aws_session_token = $AWS_SESSION_TOKEN" >> aws/credentials
 
 # Instalando dependências Python
