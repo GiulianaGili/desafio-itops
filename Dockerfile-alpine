@@ -47,7 +47,7 @@ RUN pip3 install --no-cache-dir --user --break-system-packages -r requirements.t
 
 RUN terraform init
 
-# Configurando o diretório de trabalho
+# Configurando o diretório de trabalhoo
 
 
 # Expondo a porta 8080
