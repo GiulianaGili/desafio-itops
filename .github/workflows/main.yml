@@ -1,3 +1,4 @@
+#giu
 name: senai_automacao
 run-name: ${{ github.actor }} Pipeline deploy
 on:
