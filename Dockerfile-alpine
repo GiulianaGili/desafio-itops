@@ -12,7 +12,7 @@ RUN wget https://releases.hashicorp.com/terraform/1.8.2/terraform_1.8.2_linux_am
 # Configurando diretório de trabalhoss
 WORKDIR /work
 
-# STAGE 2: Final
+# STAGE 2: Finals
 FROM alpine:latest
 
 WORKDIR /work
